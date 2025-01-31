@@ -71,9 +71,9 @@ const Navbar = () => {
                 Blog
               </a>
             </li>
-            <li className="nav-item">
-              <Link to="dashboard">Dashboard</Link>
-            </li>
+            {/* <li className="nav-item">
+              <Link to="admin">Dashboard</Link>
+            </li> */}
           </ul>
         </div>
       </div>

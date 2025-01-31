@@ -9,13 +9,11 @@ import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 
 
-
-// Import your components/pages
 import Home from './pages/Home';
 
 import Dashboard from "./pages/admin/Dashboard";
-// import About from './pages/About';
-// import Contact from './pages/Contact';
+import Login from "./pages/admin/Login";
+import PostUpload from "./pages/admin/PostUpload";
 
 function App() {
   return ( 
@@ -24,10 +22,10 @@ function App() {
         <Routes>
             {/* frontend pages */}
             <Route path="/" element={<Home />} />
-
-
-            {/* admin pages */}
-            <Route path="dashboard" element={<Dashboard />} /> 
+               {/* admin pages */}
+             <Route path="dashboard" element={<Dashboard />} /> 
+             <Route path="admin" element={<Login/>}/>
+             <Route path="/post-upload" element={<PostUpload/>}/>
         
         </Routes>
       </Router>
