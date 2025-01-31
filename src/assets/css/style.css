@@ -382,7 +382,57 @@ footer ul .nav-link
       transform: translateY(-15%) translateX(-25%);
   }
 }
+
+.main-slides-image  {
+  text-align: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  justify-content: center;
+  align-items: center;
+  display: flex
+;
+}
+.main-slides-image img {
+  animation-name: moveDownContinuous;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+  width: 285px;
+  position: absolute;
+}
+@keyframes moveDownContinuous {
+  from {
+      transform: translateY(-5%);
+  }
+  to {
+      transform: translateY(5%);
+  }
+}
+
+
+.slides1 {
+  opacity: 1;
+}
+
+.slides2 {
+  opacity: 0;
+}
+
+/* On hover, hide slides1 and show slides2 */
+.main-slides-bg:hover .slides1 {
+  opacity: 0;
+}
+
+.main-slides-bg:hover .slides2 {
+  opacity: 1;
+}
+
 /*********/
+
 
 .wt-we-do {
   padding: 180px 0;
@@ -708,3 +758,7 @@ footer ul .nav-link
   position: relative;
   margin-top: 20px;
 }
+
+
+
+  

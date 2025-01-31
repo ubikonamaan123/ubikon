@@ -6,6 +6,9 @@ import 'slick-carousel/slick/slick-theme.css';
 import Logo from '../assets/img/logo.png';
 import Wsimg from '../assets/img/ws-img.png';
 import slides1 from '../assets/img/slides-1.png';
+import slides2 from '../assets/img/slides-2.png';
+import slidesbg from '../assets/img/slidesbg.png';
+
 
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -65,7 +68,13 @@ const Home = () => {
               </div>
             </div>
             <div className='col-md-5'>
-              <div className='main-slides-image'><img className='w-100' src={slides1} /></div>
+              <div className='main-slides-bg position-relative'>
+                <img width="100%" src={slidesbg} />
+                <div className='main-slides-image'>
+                  <img className='slides1' src={slides1} />
+                  <img className='slides2' src={slides2} />
+                 </div>  
+              </div>
             </div>
           </div>
         </div>
